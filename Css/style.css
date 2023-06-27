@@ -6,7 +6,7 @@
     font-family: 'Vina Sans', sans-serif;
 }
 
-body {
+body {    
     height: 100vh;
     background: linear-gradient( #d83f02, #970202);
     display: flex;
@@ -15,7 +15,7 @@ body {
 }
 
 .relogio {
-    display: flex;
+    display: flex;    
     align-items: center;
     justify-content: space-around;
     height: 12.5rem;
@@ -46,4 +46,15 @@ body {
 
 .relogio span.tempo {
     font-size: 0.7rem;
+}
+
+
+@media(max-width: 500px) {    
+    .relogio {
+        display: grid;
+        grid-row: 1fr 1fr 1fr;
+        box-shadow: none;        
+        position: absolute;
+        top: 10%;
+    }
 }
